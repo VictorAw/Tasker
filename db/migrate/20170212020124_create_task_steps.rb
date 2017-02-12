@@ -9,6 +9,6 @@ class CreateTaskSteps < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
-    add_index :task_id
+    add_index :task_steps, :task_id
   end
 end
