@@ -7,7 +7,7 @@ class CreateTaskAssignments < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
-    add_index :user_id
-    add_index :task_id
+    add_index :task_assignments, :user_id
+    add_index :task_assignments, :task_id
   end
 end
